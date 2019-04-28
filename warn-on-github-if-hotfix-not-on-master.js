@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Warn on github if hotfix not on master
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @updateURL    https://github.com/bj0rge/tampermonkey/blob/master/warn-on-github-if-hotfix-not-on-master.js
+// @version      0.2
 // @description  try to take over the world!
 // @author       Spendesk
 // @match        *github.com/*
@@ -20,4 +21,5 @@
         const mergeMessageElement = document.querySelector('.merge-message');
         mergeMessageElement.style.background = '#ef9a9a';
     }
+	console.log('it works!')
 })();
